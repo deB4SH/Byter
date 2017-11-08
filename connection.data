@@ -1,0 +1,7 @@
+{
+  "serverIp": "serverIp",
+  "serverPort": 61000,
+  "clientIp": "clientIp",
+  "clientPort": 61000,
+  "path": "/the/path/to/write/to"
+}

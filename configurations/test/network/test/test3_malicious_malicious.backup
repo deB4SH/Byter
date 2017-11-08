@@ -1,0 +1,29 @@
+{
+  "testName": "JUnitTest3_malicious",
+  "serverConfiguration": {
+    "serverJmxHost": "localhost",
+    "serverJmxPort": 61000,
+    "username": "null",
+    "password": "null",
+    "writeImplementation": "buff",
+    "writeBufferSize": 0,
+    "networkImplementation": "buff",
+    "networkBufferSize": 64000,
+    "filePath": ".\\test-space\\commander_network_test"
+  },
+  "clientConfiguration": {
+    "clients": [
+              {
+                "clientJmxHost": "localhost",
+                "clientJmxPort": 61001,
+                "username": "null",
+                "password": "null"
+              }
+            ],
+    "bufferSize": 8192,
+    "ioImplementation": "buff",
+    "pregeneratedChunkSize": 8192,
+    "transmitTarget": 10000000
+  },
+  "measurementVolume": 2500
+}

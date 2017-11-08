@@ -1,0 +1,29 @@
+{
+  "testName": "JUnitTest18",
+  "serverConfiguration": {
+    "serverJmxHost": "localhost",
+    "serverJmxPort": 61000,
+    "username": "null",
+    "password": "null",
+    "writeImplementation": "null",
+    "writeBufferSize": 64000,
+    "networkImplementation": "buff",
+    "networkBufferSize": 64000,
+    "filePath": ".\\test-space\\commander_network_test"
+  },
+  "clientConfiguration": {
+    "clients": [
+              {
+                "clientJmxHost": "localhost",
+                "clientJmxPort": 61001,
+                "username": "null",
+                "password": "null"
+              }
+            ],
+    "bufferSize": 8192,
+    "ioImplementation": "buff",
+    "pregeneratedChunkSize": 8192,
+    "transmitTarget": 1000000
+  },
+  "measurementVolume": 2500
+}

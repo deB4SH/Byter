@@ -1,0 +1,34 @@
+{
+  "testName": "abcd4",
+  "serverConfiguration": {
+    "serverJmxHost": "host.local",
+    "serverJmxPort": 12345,
+    "username": "username",
+    "password": "password",
+    "writeImplementation": "buff",
+    "writeBufferSize": 1234,
+    "networkImplementation": "buff",
+    "networkBufferSize": 1234,
+    "filePath": ".\\test-space\\configuration_network_test"
+  },
+  "clientConfiguration": {
+    "clients": [
+      {
+        "clientJmxHost": "localhost",
+        "clientJmxPort": 61000,
+        "username": "null",
+        "password": "null"
+      },
+      {
+        "clientJmxHost": "localhost",
+        "clientJmxPort": 61001,
+        "username": "null",
+        "password": "null"
+      }
+    ],
+    "bufferSize": 1234,
+    "ioImplementation": "buff",
+    "pregeneratedChunkSize": 8192,
+    "transmitTarget": 64000
+  }
+}

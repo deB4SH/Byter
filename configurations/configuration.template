@@ -1,0 +1,24 @@
+{
+  "testName": "7m904",
+  "serverConfiguration": {
+    "serverJmxHost": "host.local",
+    "serverJmxPort": 12345,
+    "username": "username",
+    "password": "password",
+    "writeImplementation": "buff",
+    "writeBufferSize": 8192,
+    "ioImplementation": "buff",
+    "bufferSize": 8192,
+    "filePath": "/tmp/byter"
+  },
+  "clientConfiguration": {
+    "clientJmxHost": "host.local",
+    "clientJmxPort": 12346,
+    "username": "username",
+    "password": "password",
+    "bufferSize": 1234,
+    "ioImplementation": "buff",
+    "pregeneratedChunkSize": 8192,
+    "transmitTarget": 64000
+  }
+}

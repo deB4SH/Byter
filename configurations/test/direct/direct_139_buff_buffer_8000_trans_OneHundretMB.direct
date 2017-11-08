@@ -1,0 +1,20 @@
+{
+  "testName": "direct_139_buff_buffer_8000_trans_OneHundretMB",
+  "clientConfiguration": {
+    "clients": [
+      {
+        "clientJmxHost": "192.168.100.104",
+        "clientJmxPort": 61000,
+        "username": "null",
+        "password": "null"
+      }
+    ],
+    "bufferSize": 8000,
+    "ioImplementation": "buff",
+    "pregeneratedChunkSize": 8000,
+    "transmitTarget": 100000000
+  },
+  "measurementCount": 2500,
+  "writerCount": 1,
+  "writeFilePath": ".\\test-space\\config_direct_test"
+}

@@ -1,0 +1,20 @@
+{
+  "testName": "test4",
+  "clientConfiguration": {
+    "clients": [
+              {
+                "clientJmxHost": "localhost",
+                "clientJmxPort": 61001,
+                "username": "null",
+                "password": "null"
+              }
+            ],
+    "bufferSize": 64000,
+    "ioImplementation": "null",
+    "pregeneratedChunkSize": 8192,
+    "transmitTarget": 10000000
+  },
+  "measurementCount": 20,
+  "writerCount": 1,
+  "writeFilePath": ".\\test-space\\config_direct_test"
+}

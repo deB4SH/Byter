@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>de.b4sh</groupId>
+        <artifactId>master</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>bynaery</id>
+            <name>Bynaery</name>
+            <url>https://mvn.0x09.de/repository/bynaery/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <artifactId>Byter</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <trimStackTrace>false</trimStackTrace>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>de.b4sh.byter.Launcher</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- jcommander for cli -->
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>1.72</version>
+        </dependency>
+        <!-- jmx wrapper -->
+        <dependency>
+            <groupId>com.udojava</groupId>
+            <artifactId>JMXWrapper</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <!-- gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.1</version>
+        </dependency>
+        <!-- jmxmp -->
+        <!-- 1.1-SNAPSHOT is self-hosted by holmes, due to some changes on the generic server -->
+        <dependency>
+            <groupId>org.xtreemfs.opendmk</groupId>
+            <artifactId>jmxremote_optional</artifactId>
+            <version>1.1.1-SNAPSHOT</version>
+        </dependency>
+        <!-- rxjava -->
+        <dependency>
+            <groupId>io.reactivex</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+    </dependencies>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <email>gitmail@b4sh.de</email>
+            <name>Steve Golling</name>
+            <url>http://b4sh.de</url>
+            <id>deB4SH</id>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <url>https://git.0x09.de/deB4SH/Byter/issues</url>
+        <system>Gogs Issues</system>
+    </issueManagement>
+
+    <scm>
+        <url>https://git.0x09.de/deB4SH/Byter</url>
+        <connection>scm:git:git://git.0x09.de/deB4SH/Byter.git</connection>
+        <developerConnection>scm:git:git@git.0x09.de:deB4SH/Byter.git</developerConnection>
+    </scm>
+
+</project>
