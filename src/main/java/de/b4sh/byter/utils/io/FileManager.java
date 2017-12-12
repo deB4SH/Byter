@@ -120,6 +120,7 @@ public final class FileManager {
      * Creates folders on given FilePath.
      * The filePath should start from root. eg. /tmp/test/byter
      * @param filePath new file path to create
+     * @return flag if folder is created or not
      */
     public static boolean createFolder(final String filePath){
         return createFolder(new File(filePath));

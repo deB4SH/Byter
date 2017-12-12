@@ -161,6 +161,9 @@ public final class JmxClientNetworkHelper extends JmxHelper {
     /**
      * Get the status of the task completion.
      * true (done) | false working
+     * @param mbs mbean server
+     * @param on client network mbean
+     * @return  flag if task is fulfilled or not
      */
     public static boolean getTaskFulfilled(final MBeanServerConnection mbs, final ObjectName on){
         return (boolean)getAttribute(mbs,on,"LastTaskFulfilled");

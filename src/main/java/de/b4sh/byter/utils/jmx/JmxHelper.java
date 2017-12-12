@@ -43,6 +43,7 @@ class JmxHelper {
     /**
      * Get the MBeanServerConnection.
      * @param connector active JmxConnector
+     * @return the mbeanserverconnection from given jmxconnector
      */
     public static MBeanServerConnection getMBeanServer(final JMXConnector connector){
         try{

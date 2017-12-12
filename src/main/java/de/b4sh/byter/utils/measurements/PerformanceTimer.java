@@ -163,6 +163,7 @@ public final class PerformanceTimer {
 
     /**
      * get the collected measurement data.
+     * @return List with tracked Measurements
      */
     public List<Measurement> getData(){
         return this.data;
@@ -171,6 +172,7 @@ public final class PerformanceTimer {
     /**
      * Evaluate tracked measurements.
      * If the Timer doesn't contain any data and empty HashMap is returned.
+     * @return Map with evaluated data
      */
     public Map<String, Float> evaluate(){
         final Map<String, Float> responses = new HashMap<>();

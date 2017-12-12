@@ -17,7 +17,6 @@ public final class ExampleStatic implements ExampleStaticMBean{
      * @param hello a parameter
      * @param value an another parameter
      * @throws MalformedObjectNameException thrown due to malformed objectName
-     *                                      -> this should not happen here :)
      */
     public ExampleStatic(final String hello, final int value) throws MalformedObjectNameException {
         this.hello = hello;

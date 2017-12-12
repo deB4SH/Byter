@@ -165,6 +165,7 @@ public final class ServerJmxNetworkManager extends JmxEntity {
     /**
      * JMX function for starting an direct server.
      * stores the data up to byte[BufferSize] and saves the data when full
+     * @return String message that DirectStore is started
      */
     @JMXBeanOperation(name = "DirectStoreHandler",description = "Starts a server with a direct byte handling")
     public String startDirectStore(){
